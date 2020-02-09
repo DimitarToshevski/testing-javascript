@@ -1,5 +1,7 @@
 {
   "name": "js-testing-fundamentals",
+  "version": "1.0.0",
+  "description": "JS testing Fundamentals",
   "scripts": {
     "start-fe": "cd front-end && npm start",
     "start-be": "cd back-end && npm start",

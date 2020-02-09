@@ -1,0 +1,13 @@
+{
+  "name": "js-testing-fundamentals",
+  "scripts": {
+    "start-fe": "cd front-end && npm start",
+    "start-be": "cd back-end && npm start",
+    "start": "concurrently --kill-others \"npm run start-fe\" \"npm run start-be\""
+  },
+  "author": "MM",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^5.1.0"
+  }
+}

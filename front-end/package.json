@@ -1,0 +1,21 @@
+{
+  "name": "js-testing-fundamentals",
+  "version": "1.0.0",
+  "description": "JS testing Fundamentals",
+  "main": "app.js",
+  "scripts": {
+    "start": "webpack ./assets/js/app.js --mode development --watch",
+    "test": "jest --watch"
+  },
+  "author": "ММ",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^23.6.0",
+    "puppeteer": "^1.8.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
+}

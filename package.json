@@ -5,7 +5,10 @@
   "scripts": {
     "start-fe": "cd front-end && npm start",
     "start-be": "cd back-end && npm start",
-    "start": "concurrently --kill-others \"npm run start-fe\" \"npm run start-be\""
+    "start": "concurrently --kill-others \"npm run start-fe\" \"npm run start-be\"",
+    "install-fe": "cd front-end && npm i",
+    "install-be": "cd back-end && npm i",
+    "install": "concurrently --kill-others \"npm i\" \"npm run install-fe\" \"npm run install-be\""
   },
   "author": "MM",
   "license": "ISC",

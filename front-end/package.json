@@ -4,16 +4,19 @@
   "description": "JS testing Fundamentals",
   "main": "app.js",
   "scripts": {
-    "start": "webpack ./assets/js/app.js --mode development --watch",
-    "test": "jest --watch"
+    "start": "webpack-dev-server --mode=development --hot",
+    "test": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "author": "ММ",
   "license": "ISC",
   "devDependencies": {
     "jest": "^23.6.0",
+    "prettier": "^1.19.1",
     "puppeteer": "^1.8.0",
     "webpack": "^4.20.2",
-    "webpack-cli": "^3.1.2"
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.10.3"
   },
   "dependencies": {
     "axios": "^0.19.2"

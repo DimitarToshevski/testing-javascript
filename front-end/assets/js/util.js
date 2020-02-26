@@ -39,5 +39,5 @@ module.exports = {
   createElement,
   checkValuesAndGenerateText,
   generateText,
-  validateInput
+  validateInput,
 };

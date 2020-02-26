@@ -1,7 +1,7 @@
 const {
   checkValuesAndGenerateText,
   createElement,
-  generateText
+  generateText,
 } = require('./util');
 const { fetchProducts, addNewProduct } = require('./http');
 
@@ -19,7 +19,7 @@ const addProduct = () => {
 
   const newProductText = checkValuesAndGenerateText(
     productNameInput.value,
-    productQuantityInput.value
+    productQuantityInput.value,
   );
 
   if (!newProductText) {
@@ -54,7 +54,7 @@ const displayProducts = products => {
   });
 };
 
-const fetchAndDislayProducts = () => {
+const fetchAndDisplayProducts = () => {
   fetchProducts()
     .then(response => {
       displayProducts(response.data);
@@ -67,4 +67,4 @@ const fetchAndDislayProducts = () => {
 
 // Set initial event listener
 setEventListener();
-fetchAndDislayProducts();
+fetchAndDisplayProducts();

@@ -1,18 +1,18 @@
 {
   "name": "js-testing-fundamentals",
   "version": "1.0.0",
-  "description": "JS testing Fundamentals",
+  "description": "JS Testing Fundamentals",
   "scripts": {
     "start-fe": "cd front-end && npm start",
     "start-be": "cd back-end && npm start",
-    "start": "concurrently --kill-others \"npm run start-fe\" \"npm run start-be\"",
+    "start": "npm-run-all --parallel start-fe start-be",
     "install-fe": "cd front-end && npm i",
     "install-be": "cd back-end && npm i",
-    "install": "concurrently --kill-others \"npm i\" \"npm run install-fe\" \"npm run install-be\""
+    "install": "npm-run-all --parallel install-fe install-be"
   },
   "author": "MM",
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^5.1.0"
+    "npm-run-all": "^4.1.5"
   }
 }

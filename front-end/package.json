@@ -6,12 +6,13 @@
   "scripts": {
     "start": "webpack-dev-server --mode=development --hot",
     "test": "jest --watch",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "test:debug": "node --inspect-brk ./node_modules/.bin/jest --runInBand --watch"
   },
   "author": "ММ",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^23.6.0",
+    "jest": "^25.1.0",
     "prettier": "^1.19.1",
     "puppeteer": "^1.8.0",
     "webpack": "^4.20.2",

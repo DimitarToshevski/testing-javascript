@@ -22,7 +22,7 @@ test('should return product data', async () => {
 });
 
 test('should add new product', async () => {
-  const successMsg = 'http://localhost:3000/products';
+  const successMsg = 'Product added successfully!';
   const productName = 'Product 3';
   const quantity = '5';
   axios.post.mockResolvedValueOnce({ message: successMsg });
